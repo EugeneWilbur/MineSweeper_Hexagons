@@ -238,7 +238,7 @@ def mousePressed():
     else:
       for i in hexagon:
             for j in i:
-                if point_inside_polygon(mouseX, mouseY, j.getShape()) and j.visible == False:
+                if checkInside(mouseX, mouseY, j.getShape()) and j.visible == False:
                     if j.flagged == True:
                         j.flagged = False
                     else:
